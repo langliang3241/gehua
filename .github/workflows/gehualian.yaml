@@ -13,7 +13,7 @@
 #-------------------------------------------------------------------------------------------------------
 
 # Workflow name which is showed in GitHub Actions.
-name: Build Example-Firmware for Example-Device
+name: 歌华链
 
 on:
   workflow_dispatch:
