@@ -34,9 +34,9 @@ env:
   # REPO means the OpenWrt repo you want to build from in this workflow. 
   # You can modify the REPO_NAME to any name you want, but remember not to let it have the same name in 
   # other workflows.
-  REPO_NAME: example-name
-  REPO_URL: https://github.com/example/example.git
-  REPO_BRANCH: example-branch
+  REPO_NAME: 歌华链
+  REPO_URL: https://github.com/coolsnowwolf/lede.git
+  REPO_BRANCH: master
   BUILD_DEPENDS:  "ack antlr3 aria2 asciidoc autoconf automake autopoint binutils bison build-essential bzip2 \
                    ccache clang cmake cpio curl device-tree-compiler fastjar file flex gawk gettext gcc-multilib \
                    g++ g++-multilib git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev \
@@ -47,7 +47,7 @@ env:
                    zlib1g-dev"
   # CONFIG_FILE is the name of your own config files for compiling, you should upload these files into the root 
   # directory of your workflow repo.
-  CONFIG_FILE: example.config
+  CONFIG_FILE: gehualian.config
   # CUSTOM_SCRIPT_1 is the name of extra bash script you want to execute before feeds update&install.
   # CUSTOM_SCRIPT_2 is the name of extra bash script you want to execute after feeds update&install.
   # You can modify the initial settings of your firmware through these two scripts. If this is what you need,
@@ -62,7 +62,7 @@ env:
   # The following are options of where the firmware needs to be transfered. 
   COWTRANSFER_FIRMWARE: false
   WETRANSFER_FIRMWARE: false
-  RELEASE_FIRMWARE: false
+  RELEASE_FIRMWARE: true
   # Change the following to your time zone.
   TIME_ZONE: Asia/Shanghai
 
