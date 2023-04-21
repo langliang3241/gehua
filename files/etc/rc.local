@@ -1,0 +1,9 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+sleep 10 && ifconfig rai0 up #5G
+sleep 10 && ifconfig ra0 up #2G
+sleep 15 && brctl addif br-lan rai0 #5G
+sleep 15 && brctl addif br-lan ra0 #2G
+
+exit 0
